@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Intro from "./components/Intro/Intro";
+import Recommend from "./components/Recommend/Recommend";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ height: "2500px" }}>
+        {/* Intro Section */}
+        <div className="landing-bg">
+          <Header />
+          <Intro />
+        </div>
+        {/* End of Intro Section */}
+        {/* Recommended Movie Section */}
+        <div className="pt-4" style={{ backgroundColor: "black", height: "100vh" }}>
+          <Recommend />
+        </div>
+        {/* End of Recommended Movie Section */}
+      </div>
+    </>
   );
 }
 

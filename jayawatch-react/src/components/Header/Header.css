@@ -1,0 +1,26 @@
+* {
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
+}
+
+.header-brand {
+  font-size: 2.5rem !important;
+  color: #fcf404 !important;
+}
+
+.header-link,
+#basic-nav-dropdown {
+  color: white !important;
+  opacity: 0.6;
+}
+
+.dropdown-menu.show {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(150px, 200px));
+}
+
+.btn-login {
+  background-color: #fcf404 !important;
+  padding: 4px 32px !important;
+  border-radius: 20px !important;
+}
