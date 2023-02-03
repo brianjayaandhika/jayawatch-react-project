@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
-import Recommend from "./components/Recommend/Recommend";
+import Trending from "./components/Trending/Trending";
 import "./App.css";
 
 function App() {
@@ -13,11 +13,11 @@ function App() {
           <Intro />
         </div>
         {/* End of Intro Section */}
-        {/* Recommended Movie Section */}
-        <div className="pt-4" style={{ backgroundColor: "black", height: "100vh" }}>
-          <Recommend />
+        {/* Trending Movie Section - Hardcoded */}
+        <div className="pt-4" style={{ backgroundColor: "black", height: "200vh" }}>
+          <Trending />
         </div>
-        {/* End of Recommended Movie Section */}
+        {/* End of Trending Movie Section */}
       </div>
     </>
   );

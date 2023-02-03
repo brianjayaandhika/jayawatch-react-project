@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <Navbar>
         <Container>
-          <Navbar.Brand className="header-brand ">JayaWatch</Navbar.Brand>
+          <Navbar.Brand className="header-brand">JayaWatch</Navbar.Brand>
           <Nav className="header-nav me-auto">
             <Nav.Link href="#popular" className="header-link">
               Recommended
