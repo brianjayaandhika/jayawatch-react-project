@@ -1,0 +1,19 @@
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+}
+
+.divider {
+  width: 45%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.nest-divider {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}

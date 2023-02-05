@@ -16,12 +16,12 @@
 }
 
 .card-style {
-  width: 300px;
+  width: 180px;
   --bs-card-border-color: none !important;
 }
 
 .card-body {
-  height: 400px;
+  height: 280px;
   color: white !important;
   border: 1px solid rgba(138, 138, 138, 0.4);
   border-radius: 20px;
@@ -34,50 +34,8 @@
   text-align: center;
 }
 
-.card-trending-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-1.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-2.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-3.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-4.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-5.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-6 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-6.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-7 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-7.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card-trending-8 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../../assets/images/trending/trending-8.webp);
+.card-body-style {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(https://source.unsplash.com/random/?Cryptocurrency&1);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
