@@ -1,0 +1,79 @@
+/* Modal */
+
+.modal-header {
+  border-bottom: 0 !important;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(https://source.unsplash.com/random/?Heroes&1); */
+  height: 50vh;
+  display: flex !important;
+  align-items: start;
+  justify-content: start;
+
+  margin-bottom: -100px;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.modal-header .btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px !important;
+
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e")
+    center/1em auto no-repeat !important;
+}
+
+.modal-content {
+  background-color: black !important;
+}
+
+.modal {
+  --bs-modal-width: 700px !important;
+  --bs-modal-border-radius: 1rem !important;
+  --bs-modal-inner-border-radius: calc(1rem - 1px) !important;
+}
+
+.modal-title {
+  font-size: 2rem;
+  line-height: 3.0625rem;
+  font-weight: 700;
+  color: white;
+  font-family: sans-serif;
+  text-align: start;
+}
+
+.modal-categories {
+  font-size: 1.2rem;
+  color: rgba(214, 210, 210, 0.812);
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+  margin-bottom: 0.9375rem;
+  text-align: start;
+}
+
+.modal-description {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 2.4375rem;
+  width: 100%;
+  text-align: start;
+}
+
+.modal-cast {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  width: 41rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1rem;
+  text-align: start;
+}
+
+.modal-body-button {
+  display: flex !important;
+  gap: 0.9375rem !important;
+  justify-content: end !important;
+}
