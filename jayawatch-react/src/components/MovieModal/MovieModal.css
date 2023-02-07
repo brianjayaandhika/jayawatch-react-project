@@ -45,10 +45,11 @@
   text-align: start;
 }
 
-.modal-categories {
-  font-size: 1.2rem;
-  color: rgba(214, 210, 210, 0.812);
+.modal-popularity {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2rem;
+
   font-family: sans-serif;
   margin-bottom: 0.9375rem;
   text-align: start;
@@ -56,18 +57,17 @@
 
 .modal-description {
   font-family: sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
   line-height: 2.4375rem;
   width: 100%;
   text-align: start;
 }
 
-.modal-cast {
+.modal-movieId {
   font-family: sans-serif;
-  font-size: 1.1rem;
-  width: 41rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1rem;
   text-align: start;
 }

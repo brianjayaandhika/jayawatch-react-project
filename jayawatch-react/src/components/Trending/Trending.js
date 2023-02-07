@@ -32,7 +32,7 @@ const Trending = () => {
       <Container>
         <h1 className="trending-title mb-4">Trending Movie</h1>
         <Row xs={2} md={3} lg={4} xl={5} className="g-xl-5 gy-lg-3 g-sm-5 gy-5 ">
-          {popularMovies.map((movie, i) => {
+          {popularMovies.map((movie) => {
             // Style
             const cardBg = {
               backgroundPosition: "center",
@@ -40,26 +40,20 @@ const Trending = () => {
               backgroundSize: "cover",
               background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(https://image.tmdb.org/t/p/w200/${movie.poster_path})`,
             };
-
             return (
-              <>
-                <div>
-                  <Col className="d-flex justify-content-center" key={i}>
-                    <Card className="card-style" onClick={() => handleShow(movie)}>
-                      <Card.Body className="card-body-style" style={cardBg}>
-                        <Card.Title>{movie.title}</Card.Title>
-                        <Card.Text>{movie.release_date}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-
-                  {/* For Modal */}
-                  <MovieModal selectedMovie={selectedMovie} handleClose={handleClose} show={show} />
-                </div>
-              </>
+              <Col className="d-flex justify-content-center" key={movie.id}>
+                <Card className="card-style" onClick={() => handleShow(movie)}>
+                  <Card.Body className="card-body-style" style={cardBg}>
+                    <Card.Title>{movie.title}</Card.Title>
+                    <Card.Text>{movie.release_date}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
             );
           })}
         </Row>
+        {/* For Modal */}
+        <MovieModal selectedMovie={selectedMovie} handleClose={handleClose} show={show} />
       </Container>
     </>
   );

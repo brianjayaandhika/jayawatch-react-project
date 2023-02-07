@@ -1,0 +1,49 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.login-bubble {
+  width: 450px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 16px;
+  /* border: 2px solid #fcf404; */
+  padding: 24px;
+  margin: auto;
+  /* box-shadow: 4px 4px 12px 1px #fcf404; */
+}
+
+.login-bubble h1 {
+  color: #fcf404;
+  font-size: 32px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.signIn-btn {
+  background: #fcf404;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.signUp-btn {
+  background: black;
+  border: 1px solid #fcf404;
+  color: #fcf404;
+  margin-bottom: 12px;
+}
+
+.login-help-text {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: end;
+  cursor: pointer;
+}

@@ -13,7 +13,9 @@ const MovieModal = ({ movie, handleClose, show, selectedMovie }) => {
         <Modal.Header closeButton style={modalBg}></Modal.Header>
         <Modal.Body>
           <h1 className="modal-title">{selectedMovie.title}</h1>
+          <p className="modal-popularity">Popularity: {selectedMovie.popularity}</p>
           <p className="modal-description">{selectedMovie.overview}</p>
+          <p className="modal-movieId">Movie id: {selectedMovie.id}</p>
           <div className="modal-body-button">
             <Button variant="secondary" onClick={handleClose}>
               Close
