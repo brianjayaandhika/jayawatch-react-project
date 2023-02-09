@@ -1,12 +1,10 @@
 import axios from "axios";
 
 const apiKey = process.env.REACT_APP_APIKEY;
-const baseUrl = "https://api.themoviedb.org/3";
 
-// GET movie list (20)
+// GET movie list (20) - used on Landing Page
 export const getMovieList = async () => {
-  const movie = await axios.get(`${baseUrl}/movie/popular?api_key=${apiKey}`);
-  console.log({ movieList: movie });
+  const movie = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`);
   return movie.data.results;
 };
 
@@ -26,3 +24,4 @@ export const getMovieByGenre = async (q) => {
 // 1. Munculin 15 trending movie
 // 2. Show movie By Search
 // 3. Show movie by Genre
+// 4. Utk Login
