@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="divider"></div>
         <div className="divider"></div>
       </div>
-      <Navbar.Brand href="#" className="header-brand">
+      <Navbar.Brand href="/" className="header-brand">
         JayaWatch
       </Navbar.Brand>
       <p className="d-flex justify-content-center align-items-center">

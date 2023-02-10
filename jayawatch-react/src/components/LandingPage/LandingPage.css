@@ -1,0 +1,10 @@
+.landing-bg {
+  background: url("../../assets/images/movie-bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-landingPage {
+  position: relative;
+}

@@ -5,8 +5,10 @@ import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 import { useFormik } from "formik";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   // GET Session ID using Login - used on Login Page
   const formik = useFormik({
     initialValues: {
@@ -41,6 +43,10 @@ const LoginPage = () => {
                 .then(function (response) {
                   const session_id = response.data.session_id;
                   alert(`Joining with session_id: ${session_id}`);
+                  if (session_id) {
+                    navigate("/");
+                    localStorage.setItem("SID", session_id);
+                  }
                 })
                 .catch(function (error) {
                   alert(error.message);
@@ -55,32 +61,6 @@ const LoginPage = () => {
         });
     },
   });
-
-  //         axios({
-  //           method: "post",
-  //           url: `https://api.themoviedb.org/3/authentication/session/new?api_key=${process.env.REACT_APP_APIKEY}`,
-  //           data: {
-  //             request_token: request_token,
-  //           },
-  //         })
-  //           .then(function (response) {
-  //             const session_id = response.data.session_id;
-  //             alert(session_id);
-  //             if (session_id) {
-  //               localStorage.setItem("SID", session_id);
-  //             }
-  //           })
-  //           .catch(function (error) {
-  //             alert(error.message);
-  //           });
-  //       })
-  //       .catch(function (error) {
-  //         alert(error.message);
-  //       });
-  //   })
-  //   .catch(function (error) {
-  //     alert(error.message);
-  //   });
 
   return (
     <>

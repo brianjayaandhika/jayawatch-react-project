@@ -1,10 +1,14 @@
 import { Container, Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Intro.css";
 
 const Intro = () => {
+  const navigate = useNavigate;
   const search = (q) => {
-    console.log(q);
+    const movieQuery = q;
   };
+
+  const onSubmit = () => {};
 
   return (
     <>

@@ -1,21 +1,2 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.landing-bg {
-  background: url("./assets/images/movie-bg.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
 
-.login-bg {
-  background: url("./assets/images/login-bg.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}

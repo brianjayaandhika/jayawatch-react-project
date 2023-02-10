@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import Trending from "../Trending/Trending";
+import Movie from "../Movie/Movie";
 
-const MovieQuery = () => {
+const MoviePage = () => {
   return (
     <>
       <div style={{ background: "black" }}>
         <Header />
+        <Movie />
         {/* Footer Section */}
         <div className="footer-section login-footer pt-5">
           <Footer />
@@ -18,4 +19,4 @@ const MovieQuery = () => {
   );
 };
 
-export default MovieQuery;
+export default MoviePage;

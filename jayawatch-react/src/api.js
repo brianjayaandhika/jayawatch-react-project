@@ -8,17 +8,11 @@ export const getMovieList = async () => {
   return movie.data.results;
 };
 
-// GET movie by title
-export const searchMovie = async (q) => {
-  const search = await axios.get(q);
-  return;
-};
-
-// GET movie by genre
-export const getMovieByGenre = async (q) => {
-  const genre = await axios.get(q);
-  return;
-};
+// // GET movie by title
+// export const searchMovie = async (q) => {
+//   const search = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=$${apiKey}&language=en-US&page=1&query=${q}&include_adult=false`);
+//   return search.data.results;
+// };
 
 // 4 API utk film
 // 1. Munculin 15 trending movie

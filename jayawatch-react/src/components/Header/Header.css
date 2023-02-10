@@ -21,7 +21,7 @@
   opacity: 0.9 !important;
 }
 
-.dropdown-menu.show {
+.genre-dropdown .dropdown-menu.show {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(150px, 200px));
 }
@@ -31,14 +31,20 @@
   border-width: 2px !important;
 }
 
-.btn-login {
-  background-color: #fcf404 !important;
-  padding: 4px 32px !important;
-  border-radius: 20px !important;
+.forLogin #nav-dropdown {
+  color: white !important;
+  opacity: 1;
+  font-size: 18px;
 }
 
-.offcanvas {
-  background-color: black !important;
+.login-header {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.login-header:hover {
+  color: #fcf404;
 }
 
 /* Media Query */
@@ -53,30 +59,16 @@
     box-shadow: 1px 1px 8px 1px #fcf404;
   }
 
-  .offcanvas-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  }
-
   .header-link,
   .dropdown-toggle {
     margin-bottom: 25px;
     opacity: 0.9;
     display: block;
-    border-bottom: 1px solid white;
-    padding: 0 125px !important;
-    padding-bottom: 8px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .btn-login {
     margin-top: 8px;
-  }
-
-  .dropdown-menu.show {
-    display: flex !important;
-    flex-direction: column;
   }
 
   .header-link-trending {

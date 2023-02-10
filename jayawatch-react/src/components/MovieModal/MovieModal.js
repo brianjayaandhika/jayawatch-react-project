@@ -2,7 +2,7 @@ import React from "react";
 import "./MovieModal.css";
 import { Button, Modal } from "react-bootstrap";
 
-const MovieModal = ({ movie, handleClose, show, selectedMovie }) => {
+const MovieModal = ({ handleClose, show, selectedMovie }) => {
   const modalBg = {
     background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(https://image.tmdb.org/t/p/w500/${selectedMovie.poster_path})`,
   };

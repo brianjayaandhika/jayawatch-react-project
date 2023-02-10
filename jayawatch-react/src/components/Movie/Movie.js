@@ -1,19 +1,44 @@
-import "./Trending.css";
+import "./Movie.css";
 import MovieModal from "../MovieModal/MovieModal";
-import { Card, Container, Col, Row } from "react-bootstrap";
+import { Card, Container, Col, Row, Form } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { getMovieList, searchMovie } from "../../api";
+import { getMovieList } from "../../api";
+import axios from "axios";
 
-const Trending = () => {
-  // Fetching
+const Movie = () => {
+  const [Movies, setMovies] = useState([]);
+  const [isQuery, setIsQuery] = useState(false);
+  const [searchKey, setSearchKey] = useState("");
 
-  const [popularMovies, setPopularMovies] = useState([]);
+  // Fetch Popular Movie
+
+  const getPopularMovie = () => {
+    getMovieList().then((result) => {
+      setMovies(result);
+    });
+  };
 
   useEffect(() => {
-    getMovieList().then((result) => {
-      setPopularMovies(result);
-    });
+    getPopularMovie();
   }, []);
+
+  // Fetch movie by search
+  const searchMovie = (q) => {
+    setSearchKey(q);
+
+    if (q) {
+      axios({
+        method: "get",
+        url: `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_APIKEY}&language=en-US&include_adult=false&query=${q}`,
+      }).then(function (response) {
+        setMovies(response.data.results);
+        setIsQuery(true);
+      });
+    } else {
+      getPopularMovie();
+      setIsQuery(false);
+    }
+  };
 
   // Modal
   const [show, setShow] = useState(false);
@@ -25,14 +50,15 @@ const Trending = () => {
     setSelectedMovie(movie);
   };
 
-  // console.log(selectedMovie);
-
   return (
     <>
       <Container>
-        <h1 className="trending-title mb-4">Trending Movie</h1>
-        <Row xs={2} md={3} lg={4} xl={5} className="g-xl-5 gy-lg-3 g-sm-5 gy-5 ">
-          {popularMovies.map((movie) => {
+        {isQuery ? <h1 className="movie-page-title mb-4">Search results for "{searchKey}" </h1> : null}
+        <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+          <Form.Control className="form-search" type="text" placeholder="Search A Movie!" onChange={({ target }) => searchMovie(target.value)} />
+        </Form.Group>
+        <Row xs={2} md={3} lg={4} xl={5} className="movie-group g-xl-4 gy-lg-1 gx-sm-5 gy-sm-2 ">
+          {Movies.map((movie) => {
             // Style
             const cardBg = {
               backgroundPosition: "center",
@@ -59,4 +85,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default Movie;

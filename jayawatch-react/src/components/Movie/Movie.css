@@ -1,6 +1,11 @@
-.trending-title {
+.movie-page-title {
   color: white;
-  text-align: center;
+  font-size: 24px;
+}
+
+.movie-group {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 12px;
 }
 
 .card {
@@ -16,12 +21,12 @@
 }
 
 .card-style {
-  width: 180px;
   --bs-card-border-color: none !important;
 }
 
 .card-body {
-  height: 280px;
+  width: 240px;
+  height: 400px;
   color: white !important;
   border: 1px solid rgba(138, 138, 138, 0.4);
   border-radius: 20px;
@@ -35,7 +40,7 @@
 }
 
 .card-body-style {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
