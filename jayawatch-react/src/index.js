@@ -6,7 +6,6 @@ import "./index.css";
 import LandingPage from "./components/LandingPage/LandingPage";
 import LoginPage from "./components/LoginPage/LoginPage";
 import MoviePage from "./components/MoviePage/MoviePage";
-import Header from "./components/Header/Header";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";

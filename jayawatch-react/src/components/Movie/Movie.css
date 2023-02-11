@@ -11,12 +11,12 @@
 .card {
   --bs-card-border-radius: 50% !important;
   --bs-card-bg: none !important;
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
 }
 
 .card:hover {
-  opacity: 0.9;
+  opacity: 1;
   scale: 1.05;
 }
 
@@ -33,7 +33,7 @@
   box-shadow: 4px 3px 50px 2px rgba(255, 255, 255, 0.1);
 
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -43,4 +43,111 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.not-found-section {
+  height: 57vh;
+  width: 100%;
+}
+
+.text-not-found {
+  color: white;
+  font-size: 32px;
+}
+
+/* Extra Large Breakpoint */
+@media only screen and (max-width: 74.9375rem/*1199px*/) {
+  .card-body {
+    width: 200px;
+    height: 300px;
+  }
+
+  .card-title {
+    font-size: 16px !important;
+  }
+
+  .card-date {
+    font-size: 14px !important;
+  }
+}
+
+/* Medium Breakpoint */
+@media only screen and (max-width: 47.9rem/*767px*/) {
+  .card-body {
+    width: 150px;
+    height: 220px;
+  }
+
+  .card-title {
+    font-size: 16px !important;
+  }
+
+  .card-date {
+    font-size: 14px !important;
+  }
+
+  .movie-group {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+}
+
+/* Small Breakpoint */
+
+@media only screen and (max-width: 36rem /*576px*/) {
+  .card-body {
+    width: 220px;
+    height: 300px;
+  }
+
+  .modal-title {
+    font-size: 1.6rem !important;
+    line-height: 3.0625rem;
+    font-weight: 700;
+    color: white;
+    font-family: sans-serif;
+    text-align: start;
+  }
+
+  .modal-popularity {
+    font-size: 0.9rem !important;
+  }
+
+  .modal-description {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Extra Small Breakpoint */
+
+@media only screen and (max-width: 29.75rem /*476px*/) {
+  .card-body {
+    width: 180px;
+    height: 300px;
+  }
+
+  .card-title {
+    font-size: 14px !important;
+  }
+
+  .card-date {
+    font-size: 12px !important;
+  }
+}
+
+/* Extra Small Breakpoint */
+
+@media only screen and (max-width: 25.625rem /*410px*/) {
+  .card-body {
+    width: 145px;
+    height: 240px;
+  }
+
+  .card-title {
+    font-size: 14px !important;
+  }
+
+  .card-date {
+    font-size: 12px !important;
+  }
 }

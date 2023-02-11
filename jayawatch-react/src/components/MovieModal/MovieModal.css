@@ -5,8 +5,8 @@
   /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(https://source.unsplash.com/random/?Heroes&1); */
   height: 50vh;
   display: flex !important;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 
   margin-bottom: -100px;
 
@@ -75,5 +75,5 @@
 .modal-body-button {
   display: flex !important;
   gap: 0.9375rem !important;
-  justify-content: end !important;
+  justify-content: flex-end !important;
 }

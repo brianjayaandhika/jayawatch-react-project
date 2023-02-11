@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
-import { FaCopy, FaCopyright } from "react-icons/fa";
+import { FaCopyright } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         JayaWatch
       </Navbar.Brand>
       <p className="d-flex justify-content-center align-items-center">
-        <FaCopyright /> 2022, Muhammad Brianjaya Andhika
+        <FaCopyright /> 2023, Muhammad Brianjaya Andhika
       </p>
     </>
   );
