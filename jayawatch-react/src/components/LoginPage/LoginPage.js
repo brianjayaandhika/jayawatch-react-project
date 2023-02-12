@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import "./LoginPage.css";
-import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 import { useFormik } from "formik";
