@@ -64,7 +64,7 @@ const LoginPage = () => {
   return (
     <>
       <div className="login-bg login-page">
-        <div className="login-bubble">
+        <div className="login-bubble  ">
           <h1 style={{ marginBottom: "24px" }}>Sign In</h1>
           <Form onSubmit={formik.handleSubmit}>
             <Form.Group className="mb-3" controlId="username">

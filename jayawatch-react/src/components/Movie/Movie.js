@@ -14,7 +14,6 @@ const Movie = () => {
   const [searchKey, setSearchKey] = useState(searchParams.get("title") || "");
 
   // Fetch Popular Movie
-
   const getPopularMovie = () => {
     getMovieList().then((result) => {
       setMovies(result);
